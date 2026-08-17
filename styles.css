@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #141414;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 600px;      
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;      
+}
+
+/* Imagen superior (banner) */
+.form-container .banner {
+  width: 100%;            
+  height: 180px;           
+  object-fit: cover;       
+  display: block;       
+  border-top-left-radius: 8px;   
+  border-top-right-radius: 8px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .banner {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1.titulo {
+  font-family: 'Alex Brush', cursive;
+  font-size: 40px;
+  color: #d4af37; 
+  text-align: center;
+  margin: 10px 0 5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+header p {
+  font-size: 16px; 
+  text-align: center;
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  max-width: 600px;
+    text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.detalles-pedido {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 32px;
+  color: #d4af37;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+#imagen-producto {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+}
+
+/* Formulario */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Campos de texto */
+#pedidoForm input[type="text"],
+#pedidoForm input[type="email"],
+#pedidoForm input[type="tel"],
+#pedidoForm textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover rosa */
+#pedidoForm input:hover,
+#pedidoForm textarea:hover {
+  border-color: #f8c9d4;
+  background-color: #fff5f8;
+}
+
+/* Focus dorado */
+#pedidoForm input:focus,
+#pedidoForm textarea:focus {
+  border-color: #d4af37;
+  background-color: #fffbea;
+  outline: none;
+}
+
+/* Radios (tallas) */
+#pedidoForm input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #d4af37; /* dorado */
+}
+
+.options label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* Botón principal */
+form button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #f8c9d4, #f592c3); /* degradado rosa */
+  color: #d4af37; /* dorado elegante en el texto */
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #f592c3, #f8c9d4); /* invierte el degradado */
+  color: #fffbea; /* dorado claro al pasar el cursor */
+  transform: scale(1.02); /* efecto de agrandado sutil */
+}
+
+/* Rating estrellas */
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 28px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating input:checked ~ label {
+  color: #FFD700; /* dorado brillante */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #FFD700;
+}
